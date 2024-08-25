@@ -24,3 +24,6 @@ psModel <- glm(treatment ~ age + sex + prior_diabetes + prior_cvd + bmi + depriv
 
 # Append patient-level estimated propensity score (pscore) to data_processed 
 data_processed$pscore <- predict(psModel, type = "response")
+
+
+# we need to add in more graphs 
